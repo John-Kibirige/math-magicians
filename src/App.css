@@ -1,0 +1,40 @@
+.overall-container {
+  width: 500px;
+}
+
+.display {
+  background: #92a8d1;
+  padding-block: 18px;
+  text-align: right;
+  font-size: 30px;
+  color: white;
+
+}
+
+.grid-container {
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.key {
+    padding: 20px 12px;
+    border-radius: 0px;
+    border: thin solid #c8c8c8;
+}
+
+.two-spaces {
+    grid-column: 1/3;
+}
+
+.orange {
+    background-color: orange;
+    border: none;
+}
+
+.orange:not(:last-of-type) {
+    margin-bottom: 2px;
+}
+
+.orange:hover {
+    background-color: #f9ce81;
+}
