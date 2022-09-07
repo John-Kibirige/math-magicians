@@ -1,7 +1,12 @@
 import './App.css';
+import Calculator from './components/Calculator';
 
 function App() {
-  return <div className="App">Remove me</div>;
+  return (
+    <div>
+      <Calculator />
+    </div>
+  );
 }
 
 export default App;
