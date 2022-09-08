@@ -1,18 +1,23 @@
 import React from 'react';
-/* eslint-disable  */
 
-const Key = (props) => {
-    const orangeKeys = ['+', 'x', '-', '÷', '='] 
-    const orange = orangeKeys.indexOf(props.value) !== -1 ? 'orange' : '';
-    const twoSpace = props.value === '0' ? 'two-space' : '';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { PropTypes } from 'prop-types';
 
-    const {value, handleClickEvent} = props;
+const Key = ({ value, handleClickEvent }) => {
+  const orangeKeys = ['+', 'x', '-', '÷', '='];
+  const orange = orangeKeys.indexOf(value) !== -1 ? 'orange' : '';
+  const twoSpace = value === '0' ? 'two-space' : '';
 
-    const handleBtnClick = () => handleClickEvent(value);
+  const handleBtnClick = () => handleClickEvent(value);
 
-    return (
-        <button onClick={handleBtnClick} className={`key ${orange} ${twoSpace}`}>{value}</button>
-    )
-}
+  return (
+    <button onClick={handleBtnClick} className={`key ${orange} ${twoSpace}`} type="button">{value}</button>
+  );
+};
+
+Key.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleClickEvent: PropTypes.func.isRequired,
+};
 
 export default Key;
