@@ -19,8 +19,7 @@ class Calculator extends React.Component {
       ...calculate(prevState, keyPressed)
     }))
   }
-
-
+  
   render() {
     const keys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='] 
     const page = keys.map(k => <Key value={k} key={k} handleClickEvent={this.handleClick}/>)
