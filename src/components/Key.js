@@ -5,10 +5,14 @@ class Key extends React.Component {
     render() {
         const orangeKeys = ['+', 'x', '-', '÷', '='] 
         const orange = orangeKeys.indexOf(this.props.value) !== -1 ? 'orange' : '';
-        const twoSpace = this.props.value === 0 ? 'two-space' : '';
+        const twoSpace = this.props.value === '0' ? 'two-space' : '';
+
+        const {value, handleClickEvent} = this.props;
+
+        const handleBtnClick = () => handleClickEvent(value);
 
         return (
-            <button className={`key ${orange} ${twoSpace}`}>{this.props.value}</button>
+            <button onClick={handleBtnClick} className={`key ${orange} ${twoSpace}`}>{value}</button>
         )
     }
 }
