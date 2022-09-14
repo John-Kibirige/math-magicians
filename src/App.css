@@ -83,3 +83,21 @@ a {
 nav h1 {
   font-size: 34px;
 }
+
+.quote {
+  padding: 37px;
+  font-size: 20px;
+}
+
+.overall-container {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.home-page {
+  padding: 12px;
+}
+.home-page p {
+  margin: 18px;
+}
