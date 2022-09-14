@@ -1,4 +1,19 @@
-.overall-container {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.calc-container {
   width: 500px;
   background-color: #e1c7c7;
 }
@@ -37,4 +52,49 @@
 
 .orange:hover {
   background-color: #f9ce81;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 16px 15px;
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-right: 25px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+nav h1 {
+  font-size: 34px;
+}
+
+.quote {
+  padding: 37px;
+  font-size: 20px;
+}
+
+.overall-container {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.home-page {
+  padding: 12px;
+}
+
+.home-page p {
+  margin: 18px;
 }
