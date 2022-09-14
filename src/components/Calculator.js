@@ -1,4 +1,3 @@
-/*eslint-disable */
 import React, { useState } from 'react';
 import Key from './Key';
 import calculate from '../logic/calculate';
@@ -42,11 +41,11 @@ const Calculator = () => {
   ));
 
   return (
-    <div className='overall-container'>
-      <h2>Let's do some math!</h2>
-      <section className='calc-container'>
-        <div className='display'>{state.total ? state.total : '0'}</div>
-        <div className='grid-container'>{page}</div>
+    <div className="overall-container">
+      <h2>Let us do some math!</h2>
+      <section className="calc-container">
+        <div className="display">{state.total ? state.total : '0'}</div>
+        <div className="grid-container">{page}</div>
       </section>
     </div>
   );
