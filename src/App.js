@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<SharedComponent />}>
-            <Route index element={<Home />} />
+            <Route path='home' element={<Home />} />
             <Route path='calculator' element={<Calculator />} />
             <Route path='quote' element={<Quote />} />
           </Route>
