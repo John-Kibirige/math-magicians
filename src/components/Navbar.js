@@ -3,29 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <nav>
-    <NavLink to="home">
+    <NavLink to='/'>
       <h1>Math Magicians</h1>
     </NavLink>
-    <div className="nav-links">
-      <NavLink
-        to="home"
-        className={({ isActive }) => (isActive ? 'activated' : '')}
-      >
-        Home
-        {' '}
-      </NavLink>
-      <NavLink
-        to="calculator"
-        className={({ isActive }) => (isActive ? 'activated' : '')}
-      >
-        Calculator
-      </NavLink>
-      <NavLink
-        to="quote"
-        className={({ isActive }) => (isActive ? 'activated' : '')}
-      >
-        Quote
-      </NavLink>
+    <div className='nav-links'>
+      <NavLink to='/'>Home </NavLink>
+      <NavLink to='calculator'>Calculator</NavLink>
+      <NavLink to='quote'>Quote</NavLink>
     </div>
   </nav>
 );

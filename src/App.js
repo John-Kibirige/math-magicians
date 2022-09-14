@@ -1,4 +1,3 @@
-/* eslint-disable  */
 import './App.css';
 import Calculator from './components/Calculator';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -12,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<SharedComponent />}>
-            <Route path='home' element={<Home />} />
+            <Route path='/' element={<Home />} />
             <Route path='calculator' element={<Calculator />} />
             <Route path='quote' element={<Quote />} />
           </Route>
