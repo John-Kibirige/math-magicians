@@ -1,6 +1,6 @@
 /* eslint-disable  */
 import React from 'react';
-export const Home = () => {
+const Home = () => {
   return (
     <div className='home-page'>
       <h2 className='title'>Welcome to our page!</h2>
@@ -27,3 +27,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

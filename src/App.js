@@ -3,6 +3,9 @@ import './App.css';
 import Calculator from './components/Calculator';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { SharedComponent } from './components/SharedComponent';
+import Home from './components/Home';
+import Quote from './components/Quote';
+
 function App() {
   return (
     <div>
