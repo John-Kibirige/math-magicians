@@ -12,7 +12,7 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 
 ## Live Demo (if available)
 
-N/A
+https://dapper-bavarois-c097eb.netlify.app/
 
 ## Getting Started
 
@@ -48,6 +48,7 @@ These were linter tests and react mainly
 - Javascript `npx eslint .`
 
 ### Deployment
+Using [netlify](https://www.netlify.com/)
 
 ## Author
 
